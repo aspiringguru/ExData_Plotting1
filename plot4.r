@@ -60,9 +60,11 @@ legend("topright",
     lty=c(1,1,1),                 ## assign line type
 	lwd = c(3, 3, 3),             ## assign line width
 	col=c("black","red", "blue"), ## gives the legend colours
+	cex = 0.8,                   ## adjust size of text match sample provided
 	bty = "n"                     ## turns off the border around legends 
     )
-
+## tried adjust legend text size with cex, difficult to get an exact match.
+	
 ## bottom right plot (new plot global reactive power vs time)
 plot(data$dateTime , data$Global_reactive_power, type="l", xlab = "datetime", ylab="Global_reactive_power")
 
